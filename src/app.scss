@@ -10,9 +10,15 @@ $prodHeroHeight: 460px;
     box-sizing: border-box;
 }
 
+//sovrascrivo proprietà bootstrap
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .wrapper {
     width: 100vw;
-    height: 100vh;
+    overflow-y: hidden;
     header {
         height: 95.5px;
         background-color: lightblue;
@@ -66,5 +72,38 @@ $prodHeroHeight: 460px;
             width: 670px;
         }
 
+    }
+    section.image-bg {
+        height: 650px;
+        background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-01.jpg');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-attachment: fixed;
+    }
+    section.workflows {
+        height: 500px;
+        background-color: white;
+        .card{
+            width: 20%;
+        img{
+            height: 241.79px;
+            padding: 0 20px;
+        }
+        }
+    }
+    section#brush-packs {
+        height: 590.4px;
+        background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/brushpacks-bg.jpg');
+        .container {
+            height: 100%;
+            .row {
+                height: 100%;
+                .caption{
+                    background-color: white;
+                    text-align: center;
+                    padding: 60px 40px 80px;
+                }
+            }
+        }
     }
 }

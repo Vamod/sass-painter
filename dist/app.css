@@ -10905,9 +10905,14 @@ a.text-dark:focus {
   box-sizing: border-box;
 }
 
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .wrapper {
   width: 100vw;
-  height: 100vh;
+  overflow-y: hidden;
 }
 
 .wrapper header {
@@ -10974,5 +10979,46 @@ a.text-dark:focus {
 
 .wrapper section.key-pillars img.pillar-brushes {
   width: 670px;
+}
+
+.wrapper section.image-bg {
+  height: 650px;
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-01.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: fixed;
+}
+
+.wrapper section.workflows {
+  height: 500px;
+  background-color: white;
+}
+
+.wrapper section.workflows .card {
+  width: 20%;
+}
+
+.wrapper section.workflows .card img {
+  height: 241.79px;
+  padding: 0 20px;
+}
+
+.wrapper section#brush-packs {
+  height: 590.4px;
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/brushpacks-bg.jpg");
+}
+
+.wrapper section#brush-packs .container {
+  height: 100%;
+}
+
+.wrapper section#brush-packs .container .row {
+  height: 100%;
+}
+
+.wrapper section#brush-packs .container .row .caption {
+  background-color: white;
+  text-align: center;
+  padding: 60px 40px 80px;
 }
 
