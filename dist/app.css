@@ -10905,17 +10905,9 @@ a.text-dark:focus {
   box-sizing: border-box;
 }
 
-.container {
-  width: 90%;
-  margin: 0 auto;
-  height: 100%;
-  display: flex;
-}
-
 .wrapper {
   width: 100vw;
   height: 100vh;
-  background-color: tomato;
 }
 
 .wrapper header {
@@ -10930,6 +10922,16 @@ a.text-dark:focus {
   background-repeat: no-repeat;
 }
 
+.wrapper section#prod-hero .prod-info {
+  color: white;
+  height: 460px;
+}
+
+.wrapper section#prod-hero .price-brick {
+  height: 460px;
+  background-color: #030a0c;
+}
+
 .wrapper nav#product-nav {
   height: 64.4px;
   background-color: lightblue;
@@ -10942,13 +10944,35 @@ a.text-dark:focus {
   background-position: center bottom;
 }
 
-.red {
-  background-color: red;
-  height: 100%;
+.wrapper section.transition {
+  height: 1003px;
+  background-color: white;
 }
 
-.price-brick {
-  height: 100%;
-  background-color: blue;
+.wrapper section.key-pillars {
+  height: 2177px;
+  background-color: #222222;
+}
+
+.wrapper section.key-pillars .row {
+  justify-content: center;
+}
+
+.wrapper section.key-pillars .row h2,
+.wrapper section.key-pillars .row h3,
+.wrapper section.key-pillars .row p {
+  color: white;
+}
+
+.wrapper section.key-pillars img.painting-tools {
+  width: 770px;
+}
+
+.wrapper section.key-pillars img.pillar-canvas {
+  width: 670px;
+}
+
+.wrapper section.key-pillars img.pillar-brushes {
+  width: 670px;
 }
 

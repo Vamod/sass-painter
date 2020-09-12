@@ -1,38 +1,36 @@
 @import "~bootstrap/scss/bootstrap";
 
-@mixin my-display-flex {
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-}
+// variabili
+$prodHeroHeight: 460px;
 
+//comuni
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container {
-    width: 90%;
-    margin: 0 auto;
-    height: 100%;
-    @include my-display-flex;
-}
-
-
 .wrapper {
     width: 100vw;
     height: 100vh;
-    background-color: tomato;
     header {
         height: 95.5px;
         background-color: lightblue;
     }
     section#prod-hero{
-        height: 460px;
+        height: $prodHeroHeight;
         background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg');
         background-position: top center;
         background-repeat: no-repeat;
+        .prod-info {
+            color: white;
+            height: $prodHeroHeight;
+        }
+
+        .price-brick {
+            height: $prodHeroHeight;
+            background-color: #030a0c;
+        }
     }
     nav#product-nav {
         height: 64.4px;
@@ -43,17 +41,30 @@
         background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/intro.jpg');
         background-size: cover;
         background-position: center bottom;
+    }
+    section.transition {
+        height: 1003px;
+        background-color: white;
+    }
+    section.key-pillars {
+        height: 2177px;
+        background-color: #222222;
+        .row {
+            justify-content: center;
 
+            h2, h3, p{
+                color: white;
+            }
+        }
+        img.painting-tools {
+            width: 770px;
+        }
+        img.pillar-canvas {
+            width: 670px;
+        }
+        img.pillar-brushes {
+            width: 670px;
+        }
 
     }
-}
-
-.red {
-    background-color: red;
-    height: 100%;
-}
-
-.price-brick {
-    height: 100%;
-    background-color: blue;
 }
