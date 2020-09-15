@@ -27,11 +27,11 @@ header {
 }
     ##{&}-bottom{
       height: 55.5px;
-      color: red;
-      @include flex(row,space-between,center);
+      @include flex(row,flex-start,center);
           .logo img{
             width: 90px;
             margin-right: 20px;
+            padding-bottom: 20px;
       }
     }
 }
