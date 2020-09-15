@@ -15,7 +15,7 @@ header {
              padding-right: 30px;
              a {
                text-decoration: none;
-               color: #989898;
+               color: #009cff;
                &:hover{
                  text-decoration: underline;
                  color: white;
@@ -25,4 +25,13 @@ header {
     }
 }
 }
+    ##{&}-bottom{
+      height: 55.5px;
+      color: red;
+      @include flex(row,space-between,center);
+          .logo img{
+            width: 90px;
+            margin-right: 20px;
+      }
+    }
 }
