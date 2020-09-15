@@ -1,7 +1,20 @@
 @import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import 'partials/_variables.scss';
+@import 'partials/_mixins.scss';
+@import 'partials/header.scss';
 
-// variabili
-$prodHeroHeight: 460px;
+
+
+//mixin
+@mixin myIcon($name, $topOrBottom, $y, $leftOrRight, $x){
+    .icon-#{$name}{
+        background-image: url("/icons/#{$name}.svg");
+        position: absolute;
+        #{$topOrBottom}: $y;
+        #{$leftOrRight}: $x;
+    }
+}
 
 //comuni
 *{
@@ -19,91 +32,92 @@ $prodHeroHeight: 460px;
 .wrapper {
     width: 100vw;
     overflow-y: hidden;
-    header {
-        height: 95.5px;
-        background-color: lightblue;
-    }
-    section#prod-hero{
+}
+
+
+
+section#prod-hero{
+    height: $prodHeroHeight;
+    background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    .prod-info {
+        color: white;
         height: $prodHeroHeight;
-        background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg');
-        background-position: top center;
-        background-repeat: no-repeat;
-        .prod-info {
-            color: white;
-            height: $prodHeroHeight;
-        }
+    }
 
-        .price-brick {
-            height: $prodHeroHeight;
-            background-color: #030a0c;
-        }
-    }
-    nav#product-nav {
-        height: 64.4px;
-        background-color: lightblue;
-    }
-    section.lazy-loaded {
-        height: 902.8px;
-        background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/intro.jpg');
-        background-size: cover;
-        background-position: center bottom;
-    }
-    section.transition {
-        height: 1003px;
-        background-color: white;
-    }
-    section.key-pillars {
-        height: 2177px;
-        background-color: #222222;
-        .row {
-            justify-content: center;
-
-            h2, h3, p{
-                color: white;
-            }
-        }
-        img.painting-tools {
-            width: 770px;
-        }
-        img.pillar-canvas {
-            width: 670px;
-        }
-        img.pillar-brushes {
-            width: 670px;
-        }
-
-    }
-    section.image-bg {
-        height: 650px;
-        background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-01.jpg');
-        background-repeat: no-repeat;
-        background-position: center bottom;
-        background-attachment: fixed;
-    }
-    section.workflows {
-        height: 500px;
-        background-color: white;
-        .card{
-            width: 20%;
-        img{
-            height: 241.79px;
-            padding: 0 20px;
-        }
-        }
-    }
-    section#brush-packs {
-        height: 590.4px;
-        background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/brushpacks-bg.jpg');
-        .container {
-            height: 100%;
-            .row {
-                height: 100%;
-                .caption{
-                    background-color: white;
-                    text-align: center;
-                    padding: 60px 40px 80px;
-                }
-            }
-        }
+    .price-brick {
+        height: $prodHeroHeight;
+        background-color: #030a0c;
     }
 }
+nav#product-nav {
+    height: 64.4px;
+    background-color: lightblue;
+}
+section.lazy-loaded {
+    height: 902.8px;
+    background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/intro.jpg');
+    background-size: cover;
+    background-position: center bottom;
+}
+section.transition {
+    height: 1003px;
+    background-color: white;
+}
+section.key-pillars {
+    height: 2177px;
+    background-color: #222222;
+    .row {
+        justify-content: center;
+
+        h2, h3, p{
+            color: white;
+        }
+    }
+    img.painting-tools {
+        width: 770px;
+    }
+    img.pillar-canvas {
+        width: 670px;
+    }
+    img.pillar-brushes {
+        width: 670px;
+    }
+
+}
+section.image-bg {
+    height: 650px;
+    background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-01.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: fixed;
+}
+section.workflows {
+    height: 500px;
+    background-color: white;
+    .card{
+        width: 20%;
+        border: none;
+    img{
+        height: 241.79px;
+        padding: 0 20px;
+    }
+    }
+}
+section#brush-packs {
+    height: 590.4px;
+    background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/brushpacks-bg.jpg');
+    .container {
+        height: 100%;
+        .caption{
+            background-color: white;
+            text-align: center;
+            padding: 60px 40px 80px;
+        }
+
+    }
+}
+
+
+@include myIcon('user', top, 30px, left, 50px);
