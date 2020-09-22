@@ -5,6 +5,7 @@
 @import 'partials/_header.scss';
 @import 'partials/_navbar.scss';
 @import 'partials/_dropdown.scss';
+@import 'partials/_banner.scss';
 
 
 
@@ -32,27 +33,10 @@
 }
 
 .wrapper {
-    width: 100vw;
+    width: 100%;
     overflow-y: hidden;
 }
 
-
-
-section#prod-hero{
-    height: $prodHeroHeight;
-    background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg');
-    background-position: top center;
-    background-repeat: no-repeat;
-    .prod-info {
-        color: white;
-        height: $prodHeroHeight;
-    }
-
-    .price-brick {
-        height: $prodHeroHeight;
-        background-color: #030a0c;
-    }
-}
 nav#product-nav {
     height: 64.4px;
     background-color: lightblue;

@@ -11025,22 +11025,6 @@ li.parent-dropdown:focus .dropdown {
   display: block;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.row {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.wrapper {
-  width: 100vw;
-  overflow-y: hidden;
-}
-
 section#prod-hero {
   height: 460px;
   background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
@@ -11053,9 +11037,91 @@ section#prod-hero .prod-info {
   height: 460px;
 }
 
+section#prod-hero .prod-info .name {
+  display: block;
+  margin-top: 40px;
+  font-size: 27px;
+}
+
+section#prod-hero .prod-info h1 {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+section#prod-hero .prod-info ul.bullets {
+  margin: 25px 0 35px;
+}
+
+section#prod-hero .prod-info ul.bullets li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
 section#prod-hero .price-brick {
   height: 460px;
   background-color: #030a0c;
+  position: relative;
+}
+
+section#prod-hero .price-brick #money-back-img {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+section#prod-hero .price-brick #tabs-content {
+  padding-top: 40px;
+}
+
+section#prod-hero .price-brick #tabs-content .priceDisplayStrike {
+  display: block;
+  font-size: 30px;
+  color: white;
+}
+
+section#prod-hero .price-brick #tabs-content .download {
+  display: block;
+  color: #999999;
+}
+
+section#prod-hero .price-brick #tabs-content .buy-now {
+  padding: 5px 40px;
+  margin-top: 10px;
+  background-color: #009cff;
+  color: white;
+  border-radius: 0;
+}
+
+section#prod-hero .price-brick #tabs-content .lto-box {
+  margin-top: 30px;
+  background-color: white;
+  padding: 10px;
+}
+
+section#prod-hero .price-brick #tabs-content .lto-box h4 {
+  font-size: 18px;
+}
+
+section#prod-hero .price-brick #tabs-content .lto-box p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 13px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.wrapper {
+  width: 100%;
+  overflow-y: hidden;
 }
 
 nav#product-nav {

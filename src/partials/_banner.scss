@@ -1,0 +1,69 @@
+section#prod-hero{
+    height: $prodHeroHeight;
+    background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    .prod-info {
+        color: white;
+        height: $prodHeroHeight;
+        .name {
+            display: block;
+            margin-top: 40px;
+            font-size: 27px;
+        }
+        h1{
+            margin-top: 20px;
+            font-size: 24px;
+        }
+        ul.bullets{
+            margin: 25px 0 35px;
+        }
+        ul.bullets li {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+    }
+
+    .price-brick {
+        height: $prodHeroHeight;
+        background-color: #030a0c;
+        position: relative;
+        #money-back-img{
+            position: absolute;
+            top: 20px;
+            right: 10px;
+        }
+        #tabs-content {
+            padding-top: 40px;
+            .priceDisplayStrike {
+                display: block;
+                font-size: 30px;
+                color: white;
+            }
+            .download{
+                display: block;
+                color: #999999;
+            }
+            .buy-now {
+                padding: 5px 40px;
+                margin-top: 10px;
+                background-color: #009cff;
+                color: white;
+                border-radius: 0;
+            }
+            .lto-box{
+                margin-top: 30px;
+                background-color: white;
+                padding: 10px;
+                h4{
+                    font-size: 18px;
+                }
+                p{
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
